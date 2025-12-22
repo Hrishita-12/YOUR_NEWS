@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
 
-const NEWSAPI_KEY = "a4ac895ab7b1434999c7d2eb19ad19a4";
-const NEWSAPI_BASE_URL = "https://newsapi.org/v2/top-headlines";
+const NEWSAPI_KEY = "";
+const NEWSAPI_BASE_URL = "";
 const OPENAI_API_KEY =
-  "AIzaSyC2y32d3ECyY2bPLsuGkRjLI-K9hOX3Ub0";
+  "";
 
-const YOUTUBE_API_KEY = "AIzaSyCv92OIT1wAddIVVqfy4FW0Lmm92iKCGZs";
-const YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search";
+const YOUTUBE_API_KEY = "";
+const YOUTUBE_API_URL = "";
 
 const UserDashboard = () => {
   const [articles, setArticles] = useState([]);
