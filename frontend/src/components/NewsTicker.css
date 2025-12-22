@@ -1,0 +1,60 @@
+.ticker-wrapper {
+    width: 100%;
+    background: black;
+    color: white;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    height: 40px;
+  }
+  
+  .ticker {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ticker-content {
+    display: flex;
+    min-width: 200%;
+    animation: ticker-scroll 30s linear infinite;
+  }
+  
+  .headline-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+  
+  /* ✅ Make the links white */
+  .ticker-item a {
+    color: white; /* White color for articles */
+    text-decoration: none; /* No underline */
+  }
+  
+  .ticker-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /*  Pause scrolling when hovering over news */
+  .ticker-content:hover {
+    animation-play-state: paused;
+  }
+  
+  .ticker-item {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  @keyframes ticker-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }

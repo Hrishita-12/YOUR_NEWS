@@ -1,0 +1,305 @@
+/* src/styles/info.css */
+/* Base Styles */
+:root {
+    --border-color:#000000;
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #c53030;
+    --light-color: #f7fafc;
+    --dark-color: #1a202c;
+    --text-color: #2d3748;
+    --text-light: #4a5568;
+    --background: rgba(247, 250, 252, 0.95);
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --section-bg: rgba(228, 241, 241, 0.85);
+    --border-color: rgba(0, 0, 0, 0.15);
+    --border-radius: 12px;
+    --box-shadow: 0 4px 6px -1px rgba(119, 102, 102, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(206, 219, 219, 0.95),
+      rgba(229, 218, 218, 0.9)
+    );
+    min-height: 100vh;
+  }
+  
+  .info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Section Headers */
+  h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 1.75rem 0 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Privacy Policy & Terms Sections */
+  .privacy-section, .terms-section {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    border: 2px solid #000000;
+    backdrop-filter: blur(4px);
+  }
+  
+  .privacy-content, .terms-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .privacy-content p, .terms-content p {
+    margin-bottom: 1.25rem;
+    color: var(--text-color);
+    line-height: 1.7;
+  }
+  
+  .effective-date {
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1.75rem;
+    opacity: 0.9;
+  }
+  
+  ul {
+    margin-bottom: 1.75rem;
+    padding-left: 1.75rem;
+  }
+  
+  li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    line-height: 1.7;
+  }
+  
+  strong {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+  }
+  
+  a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+  
+  /* About Team Section */
+  .info-section {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    border: 2px solid #000000;
+    backdrop-filter: blur(4px);
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .team-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow), inset 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    text-align: center;
+    border: 2px solid #000000;
+    backdrop-filter: blur(2px);
+
+  }
+  
+  .team-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05),
+                0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.25rem;
+    border: 3px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-role {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .team-bio {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  /* Contact Section */
+  .contact-info {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2.5rem;
+    border: 2px solid #000000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
+  }
+  
+  .contact-info p {
+    margin: 0.75rem 0;
+    font-size: 1.05rem;
+  }
+  
+  /* Team Contacts Grid */
+  .team-contacts {
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(10, 10, 11, 0.3);
+  }
+  
+  .team-contacts h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .contact-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow), inset 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    border: 2px solid #000000;
+    backdrop-filter: blur(2px);
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05),
+                0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .contact-card p {
+    margin: 0.75rem 0;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+  
+  .contact-card strong {
+    color: var(--primary-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .info-container {
+      padding: 1.25rem;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .privacy-section, .terms-section, .info-section {
+      padding: 2rem;
+      border-width: 1.5px;
+    }
+  
+    .team-grid, .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+    
+    .privacy-section, .terms-section, .info-section {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Accessibility Focus Styles */
+  :focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  
+  /* Print Styles */
+  @media print {
+    .info-container {
+      padding: 0;
+    }
+  
+    .team-card, .contact-card {
+      break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #0c0c0c;
+    }
+    
+    body {
+      background: white;
+      color: black;
+    }
+  }

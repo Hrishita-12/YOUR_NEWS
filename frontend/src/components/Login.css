@@ -1,0 +1,98 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #c0d9e7;
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+/* Input fields */
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Wrapper for password input to position eye icon correctly */
+.password-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px; /* Adjust spacing between password input and login button */
+}
+
+.password-container input {
+  padding-right: 40px; /* Ensure space for the eye icon inside the input */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Button styling */
+button {
+  background: #007bff !important;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  margin-top: 15px; /* Additional spacing above the button */
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.admin-link {
+  margin-top: 15px;
+  color: #666;
+  cursor: pointer;
+}
+
+.admin-link span {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.admin-link span:hover {
+  color: #0056b3;
+}
+
+.register-link {
+  margin-top: 15px;
+  color: #666;
+  cursor: pointer;
+}
+
+.register-link span {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.register-link span:hover {
+  color: #0056b3;
+}
