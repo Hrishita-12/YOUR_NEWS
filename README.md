@@ -63,7 +63,7 @@ YOUR_NEWS/
 ## 1. Clone the Repository
 
 ```bash
-git clone <your-github-repository-link>
+git clone https://github.com/Hrishita-12/YOUR_NEWS
 cd YOUR_NEWS
 ```
 
